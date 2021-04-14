@@ -1,3 +1,5 @@
-/**
-* Basic typography style for copy text
-*/
+@use '../abstracts' as *;
+
+body {
+  font-family: $PrimaryFont;
+}

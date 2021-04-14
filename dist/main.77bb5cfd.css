@@ -352,7 +352,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #7d9bdb;
   text-rendering: optimizeSpeed;
 }
 @media only screen and (min-width: 600px) {
@@ -376,8 +375,57 @@ body {
   }
 }
 
-/**
-* Basic typography style for copy text
-*/
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+.hero {
+  background-image: url("/bg-header-mobile.2188aa55.png");
+  background-repeat: no-repeat, repeat;
+  text-align: center;
+}
+.hero__container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.hero__title {
+  color: #4c545d;
+  line-height: 1.4;
+  margin-top: 4rem;
+}
+.hero__desc {
+  color: #9fabb2;
+  line-height: 1.5;
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+
+.hero__button-container {
+  margin-top: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.hero__button-container .hero__button {
+  padding: 1.1rem;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+.hero__button-container .hero__button--cyan {
+  background-color: #26baa4;
+  box-shadow: 0 4px #1d9a87;
+  margin-bottom: 1.2rem;
+}
+.hero__button-container .hero__button--blue {
+  background-color: #6173ff;
+  box-shadow: 0 4px #5565e2;
+}
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
