@@ -3,6 +3,7 @@
 .hero {
   background-image: url("/images/bg-header-mobile.png");
   background-repeat: no-repeat, repeat;
+  background-size: 100% 100%;
   text-align: center;
   &__container {
     padding: 1rem;
