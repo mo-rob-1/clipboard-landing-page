@@ -1,11 +1,13 @@
 @use '../abstracts' as *;
 
-.hero__button-container {
+.hero__button-container,
+.download__button-container {
   margin-top: 1.8rem;
   display: flex;
   flex-direction: column;
   width: 100%;
-  .hero__button {
+  .hero__button,
+  .download__button {
     padding: 1.1rem;
     color: #fff;
     font-weight: bold;
@@ -13,13 +15,23 @@
     border-radius: 3rem;
     cursor: pointer;
   }
-  .hero__button--cyan {
+  .hero__button--cyan,
+  .download__button--cyan {
     background-color: $StrongCyan;
     box-shadow: 0 4px hsl(171deg 68% 36%);
     margin-bottom: 1.2rem;
   }
-  .hero__button--blue {
+  .hero__button--blue,
+  .download__button--blue {
     background-color: $LighBlue;
     box-shadow: 0 4px hsl(233deg 71% 61%);
+  }
+  .hero__button--cyan:hover,
+  .download__button--cyan:hover {
+    background-color: hsl(171, 71%, 48%);
+  }
+  .hero__button--blue:hover,
+  .download__button--blue:hover {
+    background-color: hsl(233, 100%, 75%);
   }
 }
