@@ -2,6 +2,8 @@
 
 .hero__button-container,
 .download__button-container {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
   margin-top: 1.8rem;
   display: flex;
   flex-direction: column;
@@ -33,5 +35,22 @@
   .hero__button--blue:hover,
   .download__button--blue:hover {
     background-color: hsl(233, 100%, 75%);
+  }
+  .hero__button--cyan,
+  .download__button--cyan {
+    @include responsive(tablet) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.hero__button-container,
+.download__button-container {
+  @include responsive(tablet) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
   }
 }

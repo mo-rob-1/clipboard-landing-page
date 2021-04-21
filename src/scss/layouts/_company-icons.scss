@@ -1,9 +1,31 @@
+@use '../abstracts' as *;
+
 .companies {
   &__container {
     padding: 1.2rem;
     text-align: center;
     display: grid;
     gap: 4.5rem;
-    margin-bottom: 10rem;
+    margin-bottom: 6rem;
+    @include responsive(tablet) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+    @include responsive(laptop-lg) {
+      gap: 6rem;
+    }
+  }
+  &__google,
+  &__ibm,
+  &__microsoft,
+  &__hp,
+  &__vg {
+    @include responsive(tablet) {
+      width: 100%;
+    }
   }
 }

@@ -5,13 +5,71 @@
 .feature-2 {
   text-align: center;
   &__container {
-    padding: 1.2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    @include responsive(tablet) {
+      margin: 0 auto;
+      max-width: 450px;
+    }
+    @include responsive(laptop) {
+      max-width: 650px;
+    }
   }
+  .feature-1__container {
+    @include responsive(laptop-lg) {
+      margin: none;
+      max-width: none;
+      padding: 0;
+    }
+  }
+  .feature-2__container {
+    @include responsive(laptop-lg) {
+      max-width: none;
+    }
+  }
+  .feature-2__title,
+  .feature-2__desc,
+  .feature-2__img {
+    @include responsive(laptop-lg) {
+      margin: 0 auto;
+      max-width: 650px;
+    }
+  }
+
   &__img {
     width: 100%;
   }
+  .feature-1__img {
+    @include responsive(laptop-lg) {
+      width: auto;
+    }
+  }
+  .feature-2__img {
+    @include responsive(laptop-lg) {
+      margin-top: 4rem;
+    }
+  }
   &__title {
     color: $DarkGrayishBlue;
+  }
+  .feature-1__title,
+  .feature-1__desc {
+    @include responsive(laptop-lg) {
+      margin: 0 auto;
+      max-width: 650px;
+      margin-top: 1.2rem;
+    }
+  }
+  .feature-1__desc,
+  .feature-2__desc {
+    @include responsive(laptop-lg) {
+      max-width: 500px;
+    }
+  }
+  .feature-2__desc {
+    @include responsive(laptop-lg) {
+      margin-top: 1.2rem;
+    }
   }
   &__desc {
     color: $GrayishBlue;
@@ -22,8 +80,50 @@
   &__info {
     margin-bottom: 2.6rem;
   }
+  .feature-1__info {
+    @include responsive(laptop-lg) {
+      width: 60%;
+      margin-bottom: 0;
+    }
+  }
   &__info-container {
     margin-top: 2.8rem;
+  }
+  .feature-1__info-container {
+    @include responsive(laptop) {
+      display: flex;
+      gap: 3rem;
+    }
+    @include responsive(laptop-lg) {
+      flex-direction: column;
+      text-align: left;
+      // max-width: 350px;
+    }
+  }
+  .feature-1__desktop-section {
+    @include responsive(laptop-lg) {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: 1fr;
+      gap: 4rem;
+      margin-top: 4rem;
+      margin-bottom: 6rem;
+    }
+  }
+  .feature-2__info-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    @include responsive(laptop-lg) {
+      margin: 0 auto;
+      max-width: 1050px;
+    }
+  }
+  .feature-2__info-icon-container {
+    @include responsive(laptop) {
+      display: flex;
+      gap: 3rem;
+      margin-top: 4rem;
+    }
   }
   &__info-heading {
     color: $DarkGrayishBlue;
@@ -35,6 +135,6 @@
     font-size: 0.9rem;
   }
   &__info--mb {
-    margin-bottom: 10rem;
+    margin-bottom: 7.4rem;
   }
 }

@@ -5,12 +5,22 @@
   background-repeat: no-repeat, repeat;
   background-size: 100% 100%;
   text-align: center;
+  @include responsive(laptop-lg) {
+    background-image: url("/images/bg-header-desktop.png");
+  }
   &__container {
     padding: 10rem 1.2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @include responsive(tablet) {
+      margin: 0 auto;
+      max-width: 450px;
+    }
+    @include responsive(laptop) {
+      max-width: 650px;
+    }
   }
   &__title {
     color: $DarkGrayishBlue;
