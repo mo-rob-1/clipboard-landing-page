@@ -625,9 +625,13 @@ body {
     margin-bottom: 6rem;
   }
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1024px) {
   .companies__container {
     gap: 6rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .companies__container {
     margin-top: 2rem;
   }
 }

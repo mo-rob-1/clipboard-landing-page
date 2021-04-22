@@ -19,8 +19,10 @@
       margin: 0 auto;
       margin-bottom: 6rem;
     }
-    @include responsive(laptop-lg) {
+    @include responsive(laptop) {
       gap: 6rem;
+    }
+    @include responsive(laptop-lg) {
       margin-top: 2rem;
     }
   }
