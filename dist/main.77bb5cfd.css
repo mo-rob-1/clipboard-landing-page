@@ -415,7 +415,7 @@ body {
 }
 .hero__desc {
   color: #9fabb2;
-  line-height: 1.5;
+  line-height: 1.6;
   font-size: 0.9rem;
   margin-top: 0;
 }
@@ -514,7 +514,7 @@ body {
 .feature-1__desc,
 .feature-2__desc {
   color: #9fabb2;
-  line-height: 1.5;
+  line-height: 1.6;
   font-size: 0.9rem;
   margin-bottom: 3rem;
 }
@@ -595,7 +595,7 @@ body {
 .feature-1__info-desc,
 .feature-2__info-desc {
   color: #9fabb2;
-  line-height: 1.5;
+  line-height: 1.6;
   font-size: 0.9rem;
 }
 .feature-1__info--mb,
@@ -654,7 +654,7 @@ body {
 }
 .download__desc {
   color: #9fabb2;
-  line-height: 1.5;
+  line-height: 1.6;
   font-size: 0.9rem;
   margin-bottom: 2.2rem;
 }
