@@ -369,7 +369,7 @@ body {
     background-color: #fff;
   }
 }
-@media only screen and (min-width: 2560px) {
+@media only screen and (min-width: 2060px) {
   body {
     background-color: #fff;
   }
@@ -557,7 +557,7 @@ body {
     margin-bottom: 6rem;
   }
 }
-@media only screen and (min-width: 2560px) {
+@media only screen and (min-width: 2060px) {
   .feature-1 .feature-1__desktop-section,
 .feature-2 .feature-1__desktop-section {
     margin: 0 auto;
