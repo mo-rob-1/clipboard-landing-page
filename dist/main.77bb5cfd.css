@@ -790,6 +790,7 @@ body {
 .download__button-container .download__button--cyan {
     margin-bottom: 0;
     width: 14rem;
+    margin-right: 1rem;
   }
 }
 .hero__button-container .hero__button--blue,
@@ -827,7 +828,6 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
   }
 }
 
