@@ -20,7 +20,7 @@
   .hero__button--cyan,
   .download__button--cyan {
     background-color: $StrongCyan;
-    box-shadow: 0 4px hsl(171deg 68% 36%);
+    box-shadow: 0 3px 10px rgb(38 186 164 / 49%);
     margin-bottom: 1.2rem;
     @include responsive(tablet) {
       margin-bottom: 0;
@@ -30,7 +30,7 @@
   .hero__button--blue,
   .download__button--blue {
     background-color: $LighBlue;
-    box-shadow: 0 4px hsl(233deg 71% 61%);
+    box-shadow: 0 3px 10px rgb(97 115 255 / 49%);
     @include responsive(tablet) {
       width: 14rem;
     }
