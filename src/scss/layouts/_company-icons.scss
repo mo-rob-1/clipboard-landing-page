@@ -18,10 +18,10 @@
       max-width: 1260px;
       margin: 0 auto;
       margin-bottom: 6rem;
-      margin-top: 2rem;
     }
     @include responsive(laptop-lg) {
       gap: 6rem;
+      margin-top: 2rem;
     }
   }
   &__google,
