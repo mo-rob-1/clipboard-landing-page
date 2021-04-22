@@ -11,12 +11,12 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      // gap: 3rem;
+      gap: 3rem;
       padding-left: 5rem;
       padding-right: 5rem;
     }
     @include responsive(laptop-lg) {
-      // gap: 6rem;
+      gap: 6rem;
     }
   }
   &__google,

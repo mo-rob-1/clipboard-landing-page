@@ -616,8 +616,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 3rem;
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .companies__container {
+    gap: 6rem;
   }
 }
 @media only screen and (min-width: 600px) {
@@ -735,11 +741,16 @@ body {
 .footer__social-link {
   text-decoration: none;
 }
+.footer__social-icon {
+  margin-right: 1.6rem;
+}
+.footer__social-icon:nth-child(3) {
+  margin-right: 0;
+}
 .footer__socials-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.6rem;
   margin-top: 3rem;
 }
 @media only screen and (min-width: 600px) {

@@ -64,11 +64,17 @@
   &__social-link {
     text-decoration: none;
   }
+  &__social-icon {
+    margin-right: 1.6rem;
+  }
+  &__social-icon:nth-child(3) {
+    margin-right: 0;
+  }
   &__socials-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.6rem;
+    // gap: 1.6rem;
     margin-top: 3rem;
     @include responsive(tablet) {
       margin-top: 0;
