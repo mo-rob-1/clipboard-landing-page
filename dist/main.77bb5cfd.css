@@ -551,7 +551,7 @@ body {
   .feature-1 .feature-1__desktop-section,
 .feature-2 .feature-1__desktop-section {
     display: flex;
-    gap: 4rem;
+    gap: 5.5rem;
     margin-top: 4rem;
     margin-bottom: 6rem;
   }

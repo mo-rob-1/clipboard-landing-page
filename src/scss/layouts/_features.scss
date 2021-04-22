@@ -102,7 +102,7 @@
   .feature-1__desktop-section {
     @include responsive(laptop-lg) {
       display: flex;
-      gap: 4rem;
+      gap: 5.5rem;
       margin-top: 4rem;
       margin-bottom: 6rem;
     }
