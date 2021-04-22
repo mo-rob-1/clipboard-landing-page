@@ -22,11 +22,18 @@
     background-color: $StrongCyan;
     box-shadow: 0 4px hsl(171deg 68% 36%);
     margin-bottom: 1.2rem;
+    @include responsive(tablet) {
+      margin-bottom: 0;
+      width: 14rem;
+    }
   }
   .hero__button--blue,
   .download__button--blue {
     background-color: $LighBlue;
     box-shadow: 0 4px hsl(233deg 71% 61%);
+    @include responsive(tablet) {
+      width: 14rem;
+    }
   }
   .hero__button--cyan:hover,
   .download__button--cyan:hover {
@@ -35,12 +42,6 @@
   .hero__button--blue:hover,
   .download__button--blue:hover {
     background-color: hsl(233, 100%, 75%);
-  }
-  .hero__button--cyan,
-  .download__button--cyan {
-    @include responsive(tablet) {
-      margin-bottom: 0;
-    }
   }
 }
 

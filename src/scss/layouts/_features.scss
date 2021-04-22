@@ -106,10 +106,17 @@
       margin-top: 4rem;
       margin-bottom: 6rem;
     }
+    @include responsive(desktop) {
+      margin: 0 auto;
+      max-width: 1700px;
+      margin-top: 6rem;
+      margin-bottom: 6rem;
+    }
   }
   .feature-2__info-container {
     padding-left: 1rem;
     padding-right: 1rem;
+
     @include responsive(laptop-lg) {
       margin: 0 auto;
       max-width: 1050px;
@@ -117,9 +124,11 @@
   }
   .feature-2__info-icon-container {
     @include responsive(laptop) {
-      display: flex;
-      gap: 3rem;
       margin-top: 4rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      gap: 3rem;
     }
   }
   &__info-heading {

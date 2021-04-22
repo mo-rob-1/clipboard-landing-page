@@ -369,7 +369,7 @@ body {
     background-color: #fff;
   }
 }
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 2560px) {
   body {
     background-color: #fff;
   }
@@ -556,6 +556,15 @@ body {
     margin-bottom: 6rem;
   }
 }
+@media only screen and (min-width: 2560px) {
+  .feature-1 .feature-1__desktop-section,
+.feature-2 .feature-1__desktop-section {
+    margin: 0 auto;
+    max-width: 1700px;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+}
 .feature-1 .feature-2__info-container,
 .feature-2 .feature-2__info-container {
   padding-left: 1rem;
@@ -571,9 +580,11 @@ body {
 @media only screen and (min-width: 1024px) {
   .feature-1 .feature-2__info-icon-container,
 .feature-2 .feature-2__info-icon-container {
-    display: flex;
-    gap: 3rem;
     margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 3rem;
   }
 }
 .feature-1__info-heading,
@@ -668,6 +679,18 @@ body {
     padding-right: 3rem;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .footer__container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .footer__container {
+    margin: 0 auto;
+    max-width: 1300px;
+  }
+}
 .footer__logo {
   width: 60px;
 }
@@ -689,7 +712,7 @@ body {
   padding: 0;
   list-style-type: none;
   display: grid;
-  gap: 1.8rem;
+  gap: 2rem;
 }
 @media only screen and (min-width: 600px) {
   .footer__list {
@@ -699,6 +722,12 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     text-align: left;
+    gap: 0.75rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .footer__list {
+    gap: 1.438rem;
   }
 }
 .footer__list-item--link {
@@ -715,7 +744,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2.2rem;
+  gap: 1.6rem;
   margin-top: 3rem;
 }
 @media only screen and (min-width: 600px) {
@@ -753,12 +782,29 @@ body {
   box-shadow: 0 4px #1d9a87;
   margin-bottom: 1.2rem;
 }
+@media only screen and (min-width: 600px) {
+  .hero__button-container .hero__button--cyan,
+.hero__button-container .download__button--cyan,
+.download__button-container .hero__button--cyan,
+.download__button-container .download__button--cyan {
+    margin-bottom: 0;
+    width: 14rem;
+  }
+}
 .hero__button-container .hero__button--blue,
 .hero__button-container .download__button--blue,
 .download__button-container .hero__button--blue,
 .download__button-container .download__button--blue {
   background-color: #6173ff;
   box-shadow: 0 4px #5565e2;
+}
+@media only screen and (min-width: 600px) {
+  .hero__button-container .hero__button--blue,
+.hero__button-container .download__button--blue,
+.download__button-container .hero__button--blue,
+.download__button-container .download__button--blue {
+    width: 14rem;
+  }
 }
 .hero__button-container .hero__button--cyan:hover,
 .hero__button-container .download__button--cyan:hover,
@@ -771,14 +817,6 @@ body {
 .download__button-container .hero__button--blue:hover,
 .download__button-container .download__button--blue:hover {
   background-color: #808eff;
-}
-@media only screen and (min-width: 600px) {
-  .hero__button-container .hero__button--cyan,
-.hero__button-container .download__button--cyan,
-.download__button-container .hero__button--cyan,
-.download__button-container .download__button--cyan {
-    margin-bottom: 0;
-  }
 }
 
 @media only screen and (min-width: 600px) {
