@@ -16,36 +16,40 @@
     }
   }
   .feature-1__container {
-    @include responsive(laptop-lg) {
+    @include responsive(laptop) {
       margin: none;
       max-width: none;
       padding: 0;
     }
   }
   .feature-2__container {
-    @include responsive(laptop-lg) {
+    @include responsive(laptop) {
       max-width: none;
     }
   }
   .feature-2__title,
   .feature-2__desc,
   .feature-2__img {
-    @include responsive(laptop-lg) {
+    @include responsive(laptop) {
       margin: 0 auto;
       max-width: 650px;
     }
   }
 
   &__img {
-    width: 100%;
+    max-width: 100%;
   }
   .feature-1__img {
-    @include responsive(laptop-lg) {
-      width: auto;
+    @include responsive(laptop) {
+      width: 50%;
+      object-fit: contain;
+      @include responsive(laptop-lg) {
+        width: auto;
+      }
     }
   }
   .feature-2__img {
-    @include responsive(laptop-lg) {
+    @include responsive(laptop) {
       margin-top: 4rem;
     }
   }
@@ -54,7 +58,7 @@
   }
   .feature-1__title,
   .feature-1__desc {
-    @include responsive(laptop-lg) {
+    @include responsive(laptop) {
       margin: 0 auto;
       max-width: 650px;
       margin-top: 1.2rem;
@@ -62,12 +66,12 @@
   }
   .feature-1__desc,
   .feature-2__desc {
-    @include responsive(laptop-lg) {
+    @include responsive(laptop) {
       max-width: 500px;
     }
   }
   .feature-2__desc {
-    @include responsive(laptop-lg) {
+    @include responsive(laptop) {
       margin-top: 1.2rem;
     }
   }
@@ -81,7 +85,7 @@
     margin-bottom: 2.6rem;
   }
   .feature-1__info {
-    @include responsive(laptop-lg) {
+    @include responsive(laptop) {
       width: 60%;
       margin-bottom: 0;
     }
@@ -92,19 +96,16 @@
   .feature-1__info-container {
     @include responsive(laptop) {
       display: flex;
-      gap: 3rem;
-    }
-    @include responsive(laptop-lg) {
       flex-direction: column;
       text-align: left;
     }
   }
   .feature-1__desktop-section {
-    @include responsive(laptop-lg) {
+    @include responsive(laptop) {
       display: flex;
-      gap: 5.5rem;
       margin-top: 4rem;
       margin-bottom: 6rem;
+      gap: 5rem;
     }
     @include responsive(desktop) {
       margin: 0 auto;
@@ -117,9 +118,9 @@
     padding-left: 1rem;
     padding-right: 1rem;
 
-    @include responsive(laptop-lg) {
+    @include responsive(laptop) {
       margin: 0 auto;
-      max-width: 1050px;
+      max-width: 900px;
     }
   }
   .feature-2__info-icon-container {
