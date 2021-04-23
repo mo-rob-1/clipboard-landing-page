@@ -55,6 +55,9 @@
   }
   &__title {
     color: $DarkGrayishBlue;
+    @include responsive(laptop-lg) {
+      font-size: 1.9rem;
+    }
   }
   .feature-1__title,
   .feature-1__desc {
@@ -71,6 +74,11 @@
     }
     @include responsive(laptop-lg) {
       font-size: 1rem;
+    }
+  }
+  .feature-1__desc {
+    @include responsive(laptop-lg) {
+      max-width: 600px;
     }
   }
   .feature-2__desc {
@@ -139,6 +147,19 @@
   &__info-heading {
     color: $DarkGrayishBlue;
     margin-bottom: 0;
+    @include responsive(laptop-lg) {
+      font-size: 1.3rem;
+    }
+  }
+  .feature-2__info-heading-icon {
+    @include responsive(laptop-lg) {
+      font-size: 1.3rem;
+    }
+  }
+  .feature-2__info-heading {
+    @include responsive(laptop-lg) {
+      font-size: 1.9rem;
+    }
   }
   &__info-desc {
     color: $GrayishBlue;

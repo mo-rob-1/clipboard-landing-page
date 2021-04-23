@@ -413,6 +413,11 @@ body {
   line-height: 1.4;
   margin-top: 4rem;
 }
+@media only screen and (min-width: 1440px) {
+  .hero__title {
+    font-size: 2.4rem;
+  }
+}
 .hero__desc {
   color: #9fabb2;
   line-height: 1.6;
@@ -499,6 +504,12 @@ body {
 .feature-2__title {
   color: #4c545d;
 }
+@media only screen and (min-width: 1440px) {
+  .feature-1__title,
+.feature-2__title {
+    font-size: 1.9rem;
+  }
+}
 @media only screen and (min-width: 1024px) {
   .feature-1 .feature-1__title,
 .feature-1 .feature-1__desc,
@@ -523,6 +534,12 @@ body {
 .feature-2 .feature-1__desc,
 .feature-2 .feature-2__desc {
     font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .feature-1 .feature-1__desc,
+.feature-2 .feature-1__desc {
+    max-width: 600px;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -606,6 +623,24 @@ body {
   color: #4c545d;
   margin-bottom: 0;
 }
+@media only screen and (min-width: 1440px) {
+  .feature-1__info-heading,
+.feature-2__info-heading {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .feature-1 .feature-2__info-heading-icon,
+.feature-2 .feature-2__info-heading-icon {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .feature-1 .feature-2__info-heading,
+.feature-2 .feature-2__info-heading {
+    font-size: 1.9rem;
+  }
+}
 .feature-1__info-desc,
 .feature-2__info-desc {
   color: #9fabb2;
@@ -680,6 +715,11 @@ body {
 .download__title {
   color: #4c545d;
   line-height: 1.4;
+}
+@media only screen and (min-width: 1440px) {
+  .download__title {
+    font-size: 1.9rem;
+  }
 }
 .download__desc {
   color: #9fabb2;

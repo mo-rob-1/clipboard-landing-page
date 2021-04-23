@@ -17,6 +17,9 @@
   &__title {
     color: $DarkGrayishBlue;
     line-height: 1.4;
+    @include responsive(laptop-lg) {
+      font-size: 1.9rem;
+    }
   }
   &__desc {
     color: $GrayishBlue;
