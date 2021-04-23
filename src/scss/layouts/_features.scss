@@ -97,8 +97,11 @@
   }
   .feature-1__info {
     @include responsive(laptop) {
-      width: 60%;
+      width: 65%;
       margin-bottom: 0;
+    }
+    @include responsive(laptop-lg) {
+      width: 55%;
     }
   }
   &__info-container {
