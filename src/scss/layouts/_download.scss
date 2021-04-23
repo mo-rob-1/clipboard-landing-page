@@ -23,6 +23,9 @@
     line-height: 1.6;
     font-size: 0.9rem;
     margin-bottom: 2.2rem;
+    @include responsive(laptop-lg) {
+      font-size: 1rem;
+    }
   }
   &__title,
   &__desc {

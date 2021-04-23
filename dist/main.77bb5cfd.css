@@ -419,6 +419,11 @@ body {
   font-size: 0.9rem;
   margin-top: 0;
 }
+@media only screen and (min-width: 1440px) {
+  .hero__desc {
+    font-size: 1rem;
+  }
+}
 
 .feature-1,
 .feature-2 {
@@ -512,6 +517,14 @@ body {
     max-width: 500px;
   }
 }
+@media only screen and (min-width: 1440px) {
+  .feature-1 .feature-1__desc,
+.feature-1 .feature-2__desc,
+.feature-2 .feature-1__desc,
+.feature-2 .feature-2__desc {
+    font-size: 1rem;
+  }
+}
 @media only screen and (min-width: 1024px) {
   .feature-1 .feature-2__desc,
 .feature-2 .feature-2__desc {
@@ -599,6 +612,12 @@ body {
   line-height: 1.6;
   font-size: 0.9rem;
 }
+@media only screen and (min-width: 1440px) {
+  .feature-1__info-desc,
+.feature-2__info-desc {
+    font-size: 1rem;
+  }
+}
 .feature-1__info--mb,
 .feature-2__info--mb {
   margin-bottom: 7.4rem;
@@ -667,6 +686,11 @@ body {
   line-height: 1.6;
   font-size: 0.9rem;
   margin-bottom: 2.2rem;
+}
+@media only screen and (min-width: 1440px) {
+  .download__desc {
+    font-size: 1rem;
+  }
 }
 .download__title, .download__desc {
   padding-left: 1.4rem;
